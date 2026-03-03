@@ -224,7 +224,7 @@ html, body {
 }
 
 .course-instructor {
-    font-weight: bold;            /* third line: instructor */
+    /* font-weight: bold;            /* third line: instructor */ */
     margin-top: 0.1em;
 }
 .course-item {
@@ -456,4 +456,5 @@ html, body {
         font-size: 0.85rem;
     }
 }
+
 
