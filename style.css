@@ -253,20 +253,27 @@ html, body {
    ============================================ */
 
 .cv-download {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: var(--secondary-color);
+    display: inline;
+    padding: 0;
+    /* background-color: var(--secondary-color);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
+    transition: all 0.3s ease; */
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
     transition: all 0.3s ease;
+    margin: 0 0.5rem;
 }
 
 .cv-download:hover {
-    background-color: #2980b9;
+    /* background-color: #2980b9;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4); */
+       color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .cv-entry {
@@ -456,6 +463,7 @@ html, body {
         font-size: 0.85rem;
     }
 }
+
 
 
 
