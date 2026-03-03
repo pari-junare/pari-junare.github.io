@@ -11,6 +11,9 @@
     <header class="header">
         <div class="container-center">
             <h1>Paritosh Shankarrao Junare</h1>
+             <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                🌙 Dark
+            </button>
         </div>
     </header>
 
@@ -445,8 +448,30 @@
             <p>Last updated: March 2026</p>
         </div>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            toggle.textContent = theme === 'dark' ? '🌞 Light' : '🌙 Dark';
+            localStorage.setItem('theme', theme);
+        }
+
+        // initialise: stored value or system preference
+        const stored = localStorage.getItem('theme')
+                       || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        applyTheme(stored);
+
+        toggle.addEventListener('click', () => {
+            applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+        });
+    </script>
+
+    
 </body>
 </html>
+
 
 
 
