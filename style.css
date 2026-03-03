@@ -227,7 +227,9 @@ html, body {
     font-weight: bold;            /* third line: instructor */
     margin-top: 0.1em;
 }
-
+.course-item {
+    margin-bottom: 2rem;   /* or 1em, 20px, whatever feels right */
+}
 
 /* ============================================
    LINKS
@@ -454,3 +456,4 @@ html, body {
         font-size: 0.85rem;
     }
 }
+
