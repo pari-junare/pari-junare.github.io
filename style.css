@@ -14,7 +14,7 @@
     --spacing-unit: 1rem;
 }
 /* dark theme – same names, different values */
-html[data-theme="dark"] {
+/* html[data-theme="dark"] {
     --primary-color: #eee;
     --secondary-color: #66aaff;
     --accent-color: #f88;
@@ -25,13 +25,13 @@ html[data-theme="dark"] {
 }
 
 /* make page background/text follow the variables */
-body {
+/* body {
     background-color: var(--background-color);
     color: var(--dark-text);
-}
+} */
 
 /* style for the theme toggle button */
-.theme-toggle {
+/* .theme-toggle {
     position: fixed;
     top: 0.75rem;
     right: 0.75rem;
@@ -42,12 +42,12 @@ body {
     font-size: 0.9rem;
     cursor: pointer;
     border-radius: 0.25rem;
-}
+} */
 
-.theme-toggle:hover {
+/* .theme-toggle:hover {
     background-color: var(--secondary-color);
     color: var(--background-color);
-}
+}  */
 
 * {
     margin: 0;
@@ -498,6 +498,7 @@ html, body {
         font-size: 0.85rem;
     }
 }
+
 
 
 
