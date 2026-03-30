@@ -6,6 +6,7 @@
     <title>Paritosh Shankarrao Junare</title>
     <link rel="stylesheet" href="style.css">
 </head>
+   
 <body>
     <!-- Header with Name -->
     <header class="header">
@@ -38,7 +39,9 @@
             <div class="welcome-section">
                 <p>
                     Hi! I am a third-year PhD student in Economics at the University of Bologna. In Spring 2026, I will be a visiting fellow at the University of Helsinki. My 
-                    <a href="#research">research</a> interests lie in time-series econometrics and macroeconometrics.  My current project focuses on evaluating the validity of identification conditions in non-Gaussian structural vector autoregressions.
+                    <a href="#research">research</a> interests lie in time-series econometrics and macroeconometrics.  
+                    My current project focuses on evaluating the validity of identification conditions in non-Gaussian 
+                    structural vector autoregressions. 
                 </p>
 
                 <p>
@@ -442,12 +445,11 @@
     </section> -->
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container-center">
-            <!-- <p>&copy; 2026 Your Name. All rights reserved.</p> -->
-            <p>Last updated: March 2026</p>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="container-center">
+        <p>Last updated: <span id="last-modified-date"></span></p>
+    </div>
+</footer>
 
     <!-- <script>
         const toggle = document.getElementById('theme-toggle');
@@ -467,7 +469,23 @@
             applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
         });
     </script> -->
+<script>
+    const dateElement = document.getElementById('last-modified-date');
+    
+    // document.lastModified returns a string from the server's file system
+    const lastMod = new Date(document.lastModified);
 
+    // Check if the date is valid (some browsers/servers return '0' if unknown)
+    if (!isNaN(lastMod.getTime()) && lastMod.getFullYear() > 1970) {
+        const options = { month: 'long', year: 'numeric' };
+        dateElement.textContent = lastMod.toLocaleDateString('en-US', options);
+    } else {
+        // Fallback: If server date fails, show the current month/year
+        const now = new Date();
+        const options = { month: 'long', year: 'numeric' };
+        dateElement.textContent = now.toLocaleDateString('en-US', options);
+    }
+</script>
     
 </body>
 </html>
