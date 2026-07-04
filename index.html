@@ -43,8 +43,8 @@
                 <p>
                     Hi! I am a third-year PhD student in Economics at the University of Bologna. In Spring 2026, I will be a visiting fellow at the University of Helsinki. My 
                     <a href="#research">research</a> interests lie in time-series econometrics and macroeconometrics.  
-                    My current project focuses on evaluating the validity of identification conditions in non-Gaussian 
-                    structural vector autoregressions. 
+                    My current project combines identification channels of external instruments and non-Gaussian shocks in a single GMM framework, yielding an efficient estimator which is 
+                    robust to weak instruments and mutually orthogonal specification tests for each identification strategy.
                 </p>
 
                 <p>
@@ -123,6 +123,43 @@
             </div> -->
 
             <h3>Work in Progress</h3>
+
+<div class="content-item">
+                <h4>Identification and Inference in Proxy-SVARs with non-Gaussian shocks</h4>
+                <!-- <div class="item-meta">
+                    <span><strong>Authors:</strong> Your Name, Co-Author</span> | 
+                    <span><strong>Year:</strong> 2026</span>
+                </div> -->
+                <p>
+                   <em>
+                  Abstract: Two increasingly common strategies for identifying structural VARs are external instruments, 
+                       which carry economic motivation but are often weak, and the non-Gaussianity of the shocks, 
+                       which provides statistical identification but carries no economic meaning. 
+                       We combine the two in a single generalized method of moments framework that stacks proxy exclusion 
+                       restrictions with higher-order moment conditions of the structural shocks. This hybrid identification 
+                       point identifies the target shocks and identifies the non-target shocks up to sign and ordering. 
+                       Under certain rank conditions, the higher-order moments anchor the identification uniformly over the 
+                       proxy strength: under local-to-zero proxy relevance, the estimator remains consistent with standard 
+                       asymptotic inference, and the Anderson--Rubin confidence sets are substantially narrower than those 
+                       based on the instrument alone. The hybrid estimator is also more efficient than either source used 
+                       in isolation: at any fixed proxy relevance, even a weak instrument increases efficiency through its
+covariance with the non-Gaussian moment block. Under local proxy endogeneity, we provide asymptotic bias bounds and show 
+                       that stronger non-Gaussianity of the shocks compresses the bias. Finally, the over-identified 
+                       structure yields two mutually orthogonal specification tests, for proxy exogeneity and 
+                       non-Gaussianity of shocks. We derive their limiting distributions and provide a bootstrap 
+                       procedure for finite-sample critical values. Monte Carlo evidence and an application to oil news shocks illustrate the framework.
+                   </em>
+                </p>
+                <!-- <p>
+                    Draft coming soon!
+                </p> -->
+                    <!-- <p class="item-links">
+                    <a href="#" class="publication-link">arXiv</a>
+                </p> -->
+            </div>
+
+
+
             
             <div class="content-item">
                 <h4>Two Gaussians, Too Many: A bootstrap-based approach to assess identifiability in non-Gaussian structural vector autoregressions</h4>
@@ -132,7 +169,29 @@
                 </div> -->
                 <p>
                    <em>
-                    Abstract: We propose a bootstrap-based approach to evaluate the asymptotic validity of Independent Component Analysis (ICA) identification and inference in structural vector autoregressions (SVARs). ICA-based identification requires that out of n mutually independent structural shocks, at most one is Gaussian. The diagnostic evaluates this condition by measuring the divergence between the conditional bootstrap distribution of a maximum likelihood estimator of the structural impact matrix and its asymptotic benchmark under valid identification. We establish that its bootstrap distribution, under the validity of identification conditions, is asymptotically standard normal. This simplifies the diagnostic to a test of normality of the bootstrap replications of the estimator. Crucially, under the null of valid identification the diagnostic induces no pre-testing bias, as bootstrap replications and sample size diverge jointly (at an appropriate rate). It ensures the test statistic is asymptotically independent of the data. Monte Carlo simulations with Normal-Inverse Gaussian (NIG) structural shocks demonstrate that the diagnostic attains near-exact nominal size under valid identification conditions and exhibits substantial power against identification failure caused by the presence of multiple Gaussian structural shocks. Based on the estimates of a SVAR model in the macroeconomic and financial uncertainty literature, we demonstrate its potential as a practical, robust tool for validating ICA-based identification without any pre-testing bias.
+                    Abstract: We propose a bootstrap-based approach to evaluate the asymptotic validity of 
+                       identification in non-Gaussian SVARs. The structural shocks are identified, up to sign 
+                       and column permutations, if out of $n$ mutually independent structural shocks at most 
+                       one is Gaussian. Conventional pre-tests of Gaussianity of estimated reduced-form innovations 
+                       are insufficient to diagnose the failure of identification due to more than one Gaussian shock. 
+                       Instead, we evaluate this condition by measuring the divergence between the conditional 
+                       bootstrap distribution of a maximum likelihood estimator of the structural impact matrix and 
+                       its limiting distribution under valid identification. We prove that under valid identification 
+                       and maintained regularity conditions, the conditional bootstrap distribution of the impact matrix 
+                       is asymptotically normal. This simplifies the diagnostic to a test of normality of the bootstrap 
+                       replications of the estimator. The diagnostic is remains valid for the single-Gaussian shock 
+                       specification where, though the identification conditions are met, the Gaussian shock is usually 
+                       defined at the boundary of the common parametric distributions. This ensures that the diagnostic 
+                       is valid across the entire null. Crucially, under the null of valid identification, the diagnostic 
+                       induces no pre-testing bias as bootstrap replications and sample size diverge jointly at an appropriate 
+                       rate. It ensures the test statistic is pivotal and asymptotically independent of the data. Monte Carlo 
+                       simulations with Normal-Inverse Gaussian (NIG) structural shocks demonstrate that the diagnostic attains 
+                       near-exact nominal size under valid identification conditions and detects identification failure caused 
+                       by multiple Gaussian structural shocks with power increasing in the sample size and bootstrap replications. 
+                       Under weak identification with a near-Gaussian shock, unlike residual-based pre-tests of normality, 
+                       conditioning on the bootstrap diagnostic shows robustness in probability coverages of the estimates. Based on 
+                       the estimates of a SVAR model in the macroeconomic and financial uncertainty literature, we demonstrate its 
+                       potential as a practical, robust tool for validating non-Gaussian identification without any pre-testing bias.
                    </em>
                 </p>
                 <!-- <p>
@@ -142,31 +201,6 @@
                     <a href="#" class="publication-link">arXiv</a>
                 </p> -->
             </div>
-
-               <div class="content-item">
-                <h4>Identification and Inference in Proxy-SVARs with non-Gaussian shocks</h4>
-                <!-- <div class="item-meta">
-                    <span><strong>Authors:</strong> Your Name, Co-Author</span> | 
-                    <span><strong>Year:</strong> 2026</span>
-                </div> -->
-                <p>
-                   <em>
-                  Abstract: We develop a hybrid generalized method of moments (HGMM) framework that combines identification through non-Gaussian higher-order moments with external instruments in structural vector autoregressions. By integrating these approaches within a single over-identified system, we achieve point-identification of the target shocks with valid prox
-                    ies. We show strict efficiency gains by combining the identification strategies vis-`a-vis proxy identification alone. Under local-to-zero proxy relevance, we prove robust and consistent                parameter estimation. For weak instrument robust inference, we also show HGMM estimator provides substantially narrow Anderson-Rubin confidence sets, relative to the inference
-                    based only on proxy exogeneity conditions. We establish asymptotic bias bounds due to proxy mis-specification, as strong identification from non-Gaussianity acts as an anchor. We assess the validity of this specification by constructing mutually orthogonal test statistics to separately assess: (i) proxy exogeneity conditional on shock independence, and (ii) shocks’
-                    non-Gaussianity conditional on instrument validity. This provides formal diagnostic tool to assess proxy exogeneity without auxiliary assumptions. The limiting distributions of the test                   statistics are established, and we use a finite-sample bootstrap procedure with valid criti
-                    cal values for heavy-tailed distributions. Monte Carlo simulations demonstrate consistent estimation with appropriate empirical size and power for specification tests across relevant
-                    sample sizes. An empirical application to the identification of oil news shocks illustrates the practical relevance of the framework.
-                   </em>
-                </p>
-                <!-- <p>
-                    Draft coming soon!
-                </p> -->
-                    <!-- <p class="item-links">
-                    <a href="#" class="publication-link">arXiv</a>
-                </p> -->
-            </div>
-
 
                  <h3>Research Assistant</h3>
                 <div class="content-item">
