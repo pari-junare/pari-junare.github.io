@@ -104,6 +104,9 @@ html, body {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+       /* Add these two lines */
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: high-quality;
 }
 
 /* ============================================
