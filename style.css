@@ -335,7 +335,7 @@ strong, b { font-weight: 600; }
     justify-content: space-between;
     align-items: baseline;
     column-gap: 1rem;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
@@ -521,7 +521,7 @@ strong, b { font-weight: 700; }
     margin-bottom: 1.4rem;
 }
 .content-item.wip::marker { color: var(--accent); }
-.content-item.wip h4 { margin-bottom: 0.3rem; }
+.content-item.wip h4 { margin-bottom: 0.2rem; }
 .content-item:has(.jmp-tag) {
     background: none;
     border-left: 1px solid var(--accent);
