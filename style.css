@@ -518,7 +518,7 @@ strong, b { font-weight: 700; }
     display: list-item;
     list-style: disc outside;
     margin-left: 1.25rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.4rem;
 }
 .content-item.wip::marker { color: var(--accent); }
 .content-item.wip h4 { margin-bottom: 0.3rem; }
