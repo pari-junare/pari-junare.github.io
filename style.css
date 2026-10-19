@@ -442,8 +442,9 @@ strong, b { font-weight: 600; }
     .profile-photo { margin: 0 0 1.25rem; }
 
     .profile-photo img {
-        width: 10rem;
-        height: 10rem;
+        width: 12rem;
+        height: 12rem;
+       margin: 0 auto;
     }
 
     .content-section {
